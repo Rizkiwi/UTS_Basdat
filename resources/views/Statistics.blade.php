@@ -56,76 +56,78 @@
                     <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown" style="padding-right: 0px;padding-left: 0px;"><span style="font-size: 18px;">Tampilkan Filter</span><i class="material-icons" style="font-size: 28px;">keyboard_arrow_down</i></div>
                 </div>
                 <!-- <button id="dropdownTrigger">Tampilkan Filter </button> -->
-                <div class="row-sembunyi" style="display: none;">
-                    <div class="row table-topper align-items-center" style="margin-left: 5px;padding-right: 5px;padding-top: 10px;margin-bottom: 35px;">
-                        <div class="col" style="width: 360px;height: 90px;">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h4 style="--bs-body-font-size: 1 px;">Usia</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="height: 40px;width: 80px;"></div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h4 style="--bs-body-font-size: 1 px;">Tinggi</h4>
-                                                </div>
+                <form>
+                    <div class="row-sembunyi" style="display: none;">
+                        <div class="row table-topper align-items-center" style="margin-left: 5px;padding-right: 5px;padding-top: 10px;margin-bottom: 35px;">
+                            <div class="col" style="width: 360px;height: 90px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h4 style="--bs-body-font-size: 1 px;">Usia</h4>
                                             </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="height: 40px;width: 80px;"></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h4 style="--bs-body-font-size: 1 px;">Tinggi</h4>
+                                                    </div>
                                                 </div>
-                                                <div class="col">
-                                                    <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col" style="width: 360px;height: 90px;">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h4 style="--bs-body-font-size: 1 px;">Berat</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h4 style="--bs-body-font-size: 1 px;">Posisi</h4>
-                                                </div>
+                            <div class="col" style="width: 360px;height: 90px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h4 style="--bs-body-font-size: 1 px;">Berat</h4>
                                             </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="x-dropdown dropdown">
-                                                        <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown" style="padding-right: 0px;padding-left: 0px;"><span style="font-size: 18px;">Posisi</span><i class="material-icons" style="font-size: 28px;">keyboard_arrow_down</i></div>
-                                                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Kiper</a><a class="dropdown-item" role="presentation" href="#">Bek</a><a class="dropdown-item" role="presentation" href="#">Gelandang</a><a class="dropdown-item" role="presentation" href="#">Penyerang</a></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h4 style="--bs-body-font-size: 1 px;">Posisi</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="x-dropdown dropdown">
+                                                            <div class="text-start x-drop-btn" aria-expanded="false" data-bs-toggle="dropdown" style="padding-right: 0px;padding-left: 0px;"><span style="font-size: 18px;">Posisi</span><i class="material-icons" style="font-size: 28px;">keyboard_arrow_down</i></div>
+                                                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Kiper</a><a class="dropdown-item" role="presentation" href="#">Bek</a><a class="dropdown-item" role="presentation" href="#">Gelandang</a><a class="dropdown-item" role="presentation" href="#">Penyerang</a></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -134,39 +136,77 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row table-topper align-items-center" style="margin-left: 0px;padding-left: 5px;margin-right: 0px;padding-right: 5px;margin-bottom: 30px;">
-                        <div class="col" style="width: 360px;height: 90px;">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h4 style="--bs-body-font-size: 1 px;">Gol</h4>
+                        <div class="row table-topper align-items-center" style="margin-left: 0px;padding-left: 5px;margin-right: 0px;padding-right: 5px;margin-bottom: 30px;">
+                            <div class="col" style="width: 360px;height: 90px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h4 style="--bs-body-font-size: 1 px;">Gol</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h4 style="--bs-body-font-size: 1 px;">Assist</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h4 style="--bs-body-font-size: 1 px;">Assist</h4>
-                                                </div>
+                            </div>
+                            <div class="col" style="width: 360px;height: 90px;">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h4 style="--bs-body-font-size: 1 px;">Saves</h4>
                                             </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h4 style="--bs-body-font-size: 1 px;">Cleansheets</h4>
+                                                    </div>
                                                 </div>
-                                                <div class="col">
-                                                    <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,50 +214,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col" style="width: 360px;height: 90px;">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h4 style="--bs-body-font-size: 1 px;">Saves</h4>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <h4 style="--bs-body-font-size: 1 px;">Cleansheets</h4>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Min</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="form-group mb-3"><label class="form-label" style="font-size: 14px;">Max</label><input type="text" class="form-control" style="width: 80px;height: 40px;"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row table-topper align-items-center" style="margin-left: 0px;padding-left: 0px;">
+                            <div class="col-4 text-start" style="margin: 0px;padding: 5px 15px;"><button class="btn btn-primary btn-sm reset" type="button" style="padding: 5px;margin: 2px;background: rgb(44,162,25);">Submit</button><button class="btn btn-primary btn-sm reset" type="button" style="padding: 5px;margin: 2px;background: rgb(241,15,15);">Reset Filters</button></div>
                         </div>
-                    </div>
-                    <div class="row table-topper align-items-center" style="margin-left: 0px;padding-left: 0px;">
-                        <div class="col-4 text-start" style="margin: 0px;padding: 5px 15px;"><button class="btn btn-primary btn-sm reset" type="button" style="padding: 5px;margin: 2px;background: rgb(44,162,25);">Submit</button><button class="btn btn-primary btn-sm reset" type="button" style="padding: 5px;margin: 2px;background: rgb(241,15,15);">Reset Filters</button></div>
-                    </div>
 
-                </div>
+                    </div>
+                </form>
+
                 <div class="row">
                     <div class="col-12">
                         <div class="table-responsive">
