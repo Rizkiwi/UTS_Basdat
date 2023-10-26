@@ -21,6 +21,8 @@ return new class extends Migration
             $table->foreign('ID_Kompetisi')->references('ID_Kompetisi')->on('kompetisi');
             $table->foreign('Tim_Tuan_Rumah')->references('ID_Tim')->on('tim');
             $table->foreign('Tim_Tamu')->references('ID_Tim')->on('tim');
+            $table->timestamps();
+
         });
     }
 

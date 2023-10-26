@@ -39,6 +39,17 @@
                     <li class="nav-item"><a class="nav-link" href="stat_tim_db">Stat_tim</a></li>
                     <li class="nav-item"><a class="nav-link" href="news_db">News</a></li>
                 </ul>
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    </div><button class="btn btn-primary shadow" type="submit" name="logout" style="background: rgb(208,12,0);">Log Out</button>
+
+                    <!-- <button type="submit" class="dropdown-item py-1 d-flex align-items-center justify-content-between" name="logout">
+                        <span>Log Out</span>
+                        <i class="mdi mdi-logout ml-1"></i>
+                    </button> -->
+                </form>
+
             </div>
         </div>
     </nav>

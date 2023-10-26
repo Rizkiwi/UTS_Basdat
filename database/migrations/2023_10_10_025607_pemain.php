@@ -20,6 +20,8 @@ return new class extends Migration
             $table->integer('Nomor_Punggung')->nullable();
             $table->unsignedBigInteger('ID_Tim');
             $table->foreign('ID_Tim')->references('ID_Tim')->on('tim');
+            $table->timestamps();
+
         });
     }
 

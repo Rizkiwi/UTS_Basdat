@@ -4,18 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
+    <title>Projects - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Bootstrap-4---Tabs-with-Arrows.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="assets/css/login-form-styles.css">
     <link rel="stylesheet" href="assets/css/login-form.css">
-    <link rel="stylesheet" href="assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
     <link rel="stylesheet" href="assets/css/Modern-Contact-Form.css">
     <link rel="stylesheet" href="assets/css/News-Cards-4-Columns-v2.css">
     <link rel="stylesheet" href="assets/css/News-Cards.css">
@@ -26,18 +24,16 @@
     <link rel="stylesheet" href="assets/css/x-dropdown.css">
 </head>
 
-<body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
+<body>
     <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"><i class="fa fa-soccer-ball-o" style="font-size: 14px;"></i></span><span>Bola Talent Hub</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="db">Kompetisi</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="tim_db">Tim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pemain_db">Pemain</a></li>
-                    <li class="nav-item"><a class="nav-link" href="stat_pemain_db">Stat_pemain</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pertandingan_db">Pertandingan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="stat_tim_db">Stat_tim</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news_db">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="form">Competition</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Player">Player</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Match">Match</a></li>
+                    <li class="nav-item"><a class="nav-link" href="News_form">News</a></li>
                 </ul>
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf
@@ -49,62 +45,123 @@
                         <i class="mdi mdi-logout ml-1"></i>
                     </button> -->
                 </form> 
-            </div>
         </div>
     </nav>
-    <section class="py-5" style="margin-top: 0px;padding-top: 0px;">
+    <section class="py-5" style="padding-top: 5px;">
         <div class="row text-center d-flex d-lg-flex d-xl-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center">
             <div class="col">
-                <div class="container-fluid">
-                    <div class="card" id="TableSorterCard">
-                        <div class="card-header py-3">
-                            <div class="row table-topper align-items-center">
-                                <div class="col-12 col-sm-7 col-md-6 col-lg-12 text-center" style="margin: 0px;padding: 5px 15px;">
-                                    <h1>Tim</h1>
-                                </div>
-                            </div>
+                <section class="getintouch">
+                    <div class="container modern-form" style="padding-top: 0px;">
+                        <div class="text-center">
+                            <h4 style="color: #212529;font-size: 45px;">Player</h4>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="table-responsive">
-                                    <table class="table table-striped table tablesorter" id="ipi-table">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th class="text-center">Id tim</th>
-                                                <th class="text-center">Nama</th>
-                                                <th class="text-center">Kota asal</th>
-                                                <th class="text-center">tahun berdiri</th>
-                                                <th class="text-center">asal negara</th>
-                                                <th class="text-center">id kompetisi</th>
-                                                <th class="text-center filter-false sorter-false">Tindakan</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="text-center">
-                                            <tr>
-                                                <td>Ana</td>
-                                                <td>Diseñador</td>
-                                                <td>Diseño</td>
-                                                <td>Diseño</td>
-                                                <td>Diseño</td>
-                                                <td>Diseño</td>
-                                                <td class="text-center align-middle" style="max-height: 60px;height: 60px;"><a class="btn btnMaterial btn-flat success semicircle" role="button" href="#"><i class="fas fa-pen"></i></a><a class="btn btnMaterial btn-flat accent btnNoBorders checkboxHover" role="button" style="margin-left: 5px;" data-bs-toggle="modal" data-bs-target="#delete-modal" href="#"><i class="fas fa-trash btnNoBorders" style="color: #DC3545;"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Fer<br></td>
-                                                <td>Desarrollador</td>
-                                                <td>Development</td>
-                                                <td>Development</td>
-                                                <td>Development</td>
-                                                <td>Development</td>
-                                                <td class="text-center align-middle" style="max-height: 60px;height: 60px;"><a class="btn btnMaterial btn-flat success semicircle" role="button" href="#"><i class="fas fa-pen"></i></a><a class="btn btnMaterial btn-flat accent btnNoBorders checkboxHover" role="button" style="margin-left: 5px;" data-bs-toggle="modal" data-bs-target="#delete-modal" href="#"><i class="fas fa-trash btnNoBorders" style="color: #DC3545;"></i></a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div class="modern-form__form-container">
+                            @if(Session::has('success'))
+                                <div class="alert alert-success" role="alert">
+                                    {{ Session::get('success') }}
                                 </div>
-                            </div>
+                            @endif
+                            @if(Session::has('error'))
+                                <div class="alert alert-danger" role="alert">
+                                    {{Session::get('error')}}
+                                </div>
+                            @endif
+                            @if($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            <form action="{{ route('pemain') }}" method="POST">
+                                @csrf
+                                <div class="row">
+                                    <div class="col col-contact">
+                                        <div class="modern-form__form-group--padding-r form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="Nama" name="Nama_Pemain">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-contact">
+                                        <div class="modern-form__form-group--padding-l form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="Berat badan" name="Berat_Badan">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-contact">
+                                        <div class="modern-form__form-group--padding-r form-group mb-3"><input class="form-control input input-tr" placeholder="First Name" type="date" name="Tanggal_Lahir">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-contact">
+                                        <div class="modern-form__form-group--padding-l form-group mb-3">
+                                            <select class="form-control input input-tr" name="Posisi_Pemain">
+                                                <option value="Kiper">Kiper</option>
+                                                <option value="Bek">Bek</option>
+                                                <option value="Gelandang">Gelandang</option>
+                                                <option value="Penyerang">Penyerang</option>
+                                            </select>
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col col-contact">
+                                        <div class="modern-form__form-group--padding-r form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="Tempat Lahir" name="Tempat_Lahir">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-contact">
+                                        <div class="modern-form__form-group--padding-l form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="Nomor punggung" name="Nomor_Punggung">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-contact">
+                                        <div class="modern-form__form-group--padding-r form-group mb-3"><input class="form-control input input-tr" type="text" placeholder="Tinggi badan" name="Tinggi_Badan">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col col-contact">
+                                        <div class="modern-form__form-group--padding-l form-group mb-3">
+                                            <select class="form-control input input-tr" name="ID_Tim">
+                                                <option value="">Pilih Tim</option>
+                                                @foreach($timList as $tim)
+                                                    <option value="{{ $tim->ID_Tim }}">{{ $tim->Nama_Tim }}</option>
+                                                @endforeach
+                                            </select>
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col text-center"><button class="btn btn-primary submit-now" type="submit" style="background: var(--bs-btn-active-border-color);">Submit Now</button></div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </section>
@@ -165,12 +222,6 @@
     <script src="assets/js/bold-and-bright.js"></script>
     <script src="assets/js/Dynamically-Add-Remove-Table-Row.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-1.js"></script>
-    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.js"></script>
     <script src="assets/js/Profile-Edit-Form.js"></script>
     <script src="assets/js/Responsive-News-Card-Slider.js"></script>
 </body>

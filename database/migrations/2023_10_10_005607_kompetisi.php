@@ -15,6 +15,8 @@ return new class extends Migration
             $table->date('Tanggal_Mulai')->nullable();
             $table->date('Tanggal_Berakhir')->nullable();
             $table->string('Juara', 255);
+            $table->timestamps();
+
         });
     }
 

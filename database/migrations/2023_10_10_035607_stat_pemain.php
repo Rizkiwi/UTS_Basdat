@@ -21,6 +21,8 @@ return new class extends Migration
             $table->integer('Clean_Sheet');
             $table->integer('Tahun');
             $table->foreign('ID_Pemain')->references('ID_Pemain')->on('pemain');
+            $table->timestamps();
+
         });
     }
 

@@ -21,6 +21,8 @@ return new class extends Migration
             $table->unsignedBigInteger('ID_Kompetisi');
             $table->foreign('ID_Tim')->references('ID_Tim')->on('tim');
             $table->foreign('ID_Kompetisi')->references('ID_Kompetisi')->on('kompetisi');
+            $table->timestamps();
+
         });
     }
 
